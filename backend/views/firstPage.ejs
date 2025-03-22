@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/styles.css">
+<!-- <script src="assets/javascript/script.js"></script> -->
+
+</head>
+<body>
+  
+  <div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      
+      <form action="/save" method="post" id="myForm"  >
+        
+        <div class="formbold-input-group">
+          <div class="ptitle"> Personal Details</div>
+          <label for="firsname">First Name</label><br>
+          <input type="text" id="firsname" class='formbold-form-input' name="firstname" placeholder="first Name" required><br>
+          <label for="lastname">Last Name</label><br>
+           <input type="text" class='formbold-form-input' id="lastname" name="lastname" placeholder="last Name" required><br>
+           <label for="dob"> Date of Birth</label><br>
+         <input id="dob" type="date" name="dob" required="required"><br>
+         <label for="prejhs">  Previous JHS</label><br>
+     <input id="prejhs" type="text" name="prejhs" required><br>
+     <label for="grade">  BECE Grade</label><br>
+      <select class="formbold-form-select" name="grade" id="grade" required>
+          <option value="--">--</option>
+          <option value="06">06</option> <option value="07">07</option> <option value="08">08</option> <option value="09">09</option><option value="10">10</option>
+          <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option>
+          <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option>
+          <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option>
+          <option value="23">24</option> <option value="25">25</option> <option value="26">26</option> <option value="27">27</option>
+          <option value="28">28</option> <option value="29">29</option> <option value="30">30</option> <option value="31">31</option>
+           <option value="others">others</option>
+      </select>
+        </div>  
+        <label for="program">  Program Offered</label><br>
+       <select class="formbold-form-select" name="program" id="program" required>
+            <option>--</option>
+    <option General Arts>General Arts</option><option value="General Science">General Science</option><option value="Bussiness">Bussiness</option><option Visaula Art>Visual Arts</option>
+    <option value="Home Economics">Home Economics</option><option value="others">Others</option>
+        </select><br>
+
+        <div class="resultsSegment"> BECE Results</div>
+        <label for="grade">ENGLISH</label><br>
+        <select class="formbold-form-select" name="english" id="grade" required>
+            <option value="--">--</option>
+            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <label for="grade">MATHS</label><br>
+        <select class="formbold-form-select" name="maths" id="grade" required>
+            <option value="--">--</option>
+           <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <label for="grade">SCIENCE</label><br>
+        <select class="formbold-form-select" name="science" id="grade" required>
+            <option value="--">--</option>
+           <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <label for="grade">SOCIAL STUDIES</label><br>
+        <select class="formbold-form-select" name="socialStudies" id="grade" required>
+            <option value="--">--</option>
+            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <label for="grade">RME</label><br>
+        <select class="formbold-form-select" name="rme" id="grade" required>
+            <option value="--">--</option>
+           <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <label for="grade">ICT</label><br>
+        <select class="formbold-form-select" name="ict" id="grade" required>
+            <option value="--">--</option>
+            <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option><option value="5">5</option>
+            <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option><option value="10">10</option>
+        </select><br>
+        <div class="parentDetail ">
+            <div class="gtitle"> Guardian Details</div>
+            <label for="mothername"> Mother's Name</label><br>
+           <input id="mothername" name="mothername" type="text" required="required"> <br> 
+           <label for="contact">Contact</label><br>
+           <input id="contact" name="motherContact" type="tel" required="required"> <br> 
+           <label for="fathername">Father's Name</label><br>
+            <input id="fathername" type="text" name="fathername" required> <br>
+            <label for="fathercontact">Contact</label><br>
+            <input type="tel" name="fatherContact" id="fathercontact" required="required">
+      </div >  <br>
+  
+        <button  type='submit' class="formbold-btn" >Submit</button>
+      </form>
+    </div>
+  </div>
+ <!-- Modal for toast messages -->
+ <div id="toastModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="toastMessage"></p>
+  </div>
+</div>
+<!-- <script>
+  // document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('myForm');
+    const toastModal = document.getElementById('toastModal');
+    const toastMessage = document.getElementById('toastMessage');
+    const closeBtn = document.querySelector('.close');
+  
+    document.getElementById('myForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+  
+      const formData = new FormData(form);
+      const firstname = formData.get('firstname');
+      const lastname = formData.get('lastname');
+      const dob = formData.get('dob');
+  
+      const response = await fetch('/save', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ firstname, lastname,dob })
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        showToast(data.message);
+      } else {
+        
+        showToastError(data.message);
+      }
+    });
+    // Function to display success or info toast
+    function showToast(message) {
+      toastModal.style.display = 'block';
+      toastMessage.textContent = message;
+  
+      closeBtn.onclick = function() {
+        toastModal.style.display = 'none';
+      }
+      setTimeout(() => {
+        toastModal.style.display = 'none';
+      }, 3000);
+    }
+    // Function to display error toast
+    function showToastError(message) {
+      toastModal.style.backgroundColor = '#ffcccc'; // Change background color for error
+      showToast(message);
+    }
+  // });
+</script> -->
+</body>
+</html>

@@ -27,6 +27,18 @@ const SearchStudent = () => {
 		);
 	  };
 
+       const fetchStudents = () => {
+                  const params = selectedPrograms.length ? { programs: selectedPrograms.join(',') } : {};
+                  axios.get('http://localhost:3000/students/sort', { params })
+                    .then(response => {
+                      setStudents(response.data);
+                    })
+                    .catch(error => {
+                      console.error('Error fetching students:', error);
+                    });
+                };
+      
+
     return (
 		<>
         <div style={{ textAlign: 'center', padding: '20px' }}>
@@ -51,7 +63,7 @@ const SearchStudent = () => {
                   </label>
 				   ))}
 			</div>
-			
+			<div>Total Number Registered student :{students.length} </div>
 
             <table border="1" width="80%" style={{ margin: '20px auto', borderCollapse: 'collapse' }}>
                 <thead>

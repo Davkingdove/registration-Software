@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +22,6 @@ body {
   padding: 40px;
 }
 
-.formbold-form-img {
-  margin-bottom: 45px;
-}
 input {
     width: 100%;
     padding: 13px 22px;
@@ -38,7 +35,6 @@ input {
     resize: none;
 }
 
-/* Add focus styles */
 input:focus {
     border-color: #4CAF50;
     outline: none;
@@ -61,101 +57,14 @@ input:focus {
   resize: none;
 }
 
-.formbold-input-radio-wrapper {
-  margin-bottom: 25px;
-}
-.formbold-radio-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.formbold-radio-label {
-  font-size: 14px;
-  line-height: 24px;
-  color: #07074d;
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.formbold-input-radio {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.formbold-radio-checkmark {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  height: 18px;
-  width: 18px;
-  background-color: #ffffff;
-  border: 1px solid #dde3ec;
-  border-radius: 50%;
-}
-.formbold-radio-label
-  .formbold-input-radio:checked
-  ~ .formbold-radio-checkmark {
-  background-color: #6a64f1;
-}
-.formbold-radio-checkmark:after {
-  content: '';
-  position: absolute;
-  display: none;
-}
-
-.formbold-radio-label
-  .formbold-input-radio:checked
-  ~ .formbold-radio-checkmark:after {
-  display: block;
-}
-
-.formbold-radio-label .formbold-radio-checkmark:after {
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
-}
-
-.formbold-form-input {
-  width: 100%;
-  padding: 13px 22px;
-  border-radius: 5px;
-  border: 1px solid #dde3ec;
-  background: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  color: #07074d;
-  outline: none;
-  resize: none;
-}
-.formbold-form-input::placeholder {
-  color: #536387;
-}
-.formbold-form-input:focus {
-  border-color: #6a64f1;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-}
-.formbold-form-label {
-  color: #07074d;
-  font-size: 14px;
-  line-height: 24px;
-  display: block;
-  margin-bottom: 10px;
-}
-
 div.ptitle,div.gtitle,div.resultsSegment{
     text-align: center;
     font-size: larger;
     font-weight: bold;
 }
-
+label{
+  text-align: center;  
+}
 .formbold-btn {
   text-align: center;
   width: 100%;
@@ -169,7 +78,15 @@ div.ptitle,div.gtitle,div.resultsSegment{
   cursor: pointer;
   margin-top: 25px;
 }
-.formbold-btn:hover {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+
+/* align images by each input form*/
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
-</style>
+.form-group img {
+  width: 35px;
+  height: 30px;
+  margin-right: 10px;
+}
